@@ -31,7 +31,7 @@ public class SeriadosController {
     @GetMapping(SERIADOS_ENDPOINT_LOCAL)
     @ResponseStatus(HttpStatus.OK)
     public Flux<Seriados> getAllItems() {
-        log.info("requesting the list off all heroes");
+        log.info("requesting the list off all seriados");
         return seriadosService.findAll();
 
     }
